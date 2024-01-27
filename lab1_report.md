@@ -27,10 +27,11 @@ No Error
 ```
 [user@sahara ~]$ cd lecture1/Hello.java
 bash: cd: lecture1/Hello.java: Not a directory
+[user@sahara ~]$ 
 ```
 initial directory is `/home`
 
-I got this output because it causes an error.
+I got this output because it causes an error. And I'm still in `/home` directory.
 
 It is an error, the argument is file, but it has to be a directory
 
