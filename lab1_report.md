@@ -40,6 +40,7 @@ It is an error, the argument is file, but it has to be a directory
 ```
 [user@sahara ~]$ ls
 lecture1
+[user@sahara ~]$
 ```
 initial directory is `/home`
 
