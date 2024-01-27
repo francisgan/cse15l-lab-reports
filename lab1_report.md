@@ -53,6 +53,7 @@ No error
 ```
 [user@sahara ~]$ ls lecture1
 Hello.class  Hello.java  messages  README
+[user@sahara ~]$
 ```
 initial directory is `/home`
 
@@ -65,6 +66,7 @@ No error
 ```
 [user@sahara ~]$ ls lecture1/Hello.java
 lecture1/Hello.java
+[user@sahara ~]$
 ```
 initial directory is `/home`
 
