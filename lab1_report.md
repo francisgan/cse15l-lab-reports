@@ -3,7 +3,7 @@
 ```
 [user@sahara ~/lecture1]$ cd
 ```
-initial directory is /home
+initial directory is `/home`
 
 No output, since I'm just changing working directory, and this command changes working directory to /home
 
