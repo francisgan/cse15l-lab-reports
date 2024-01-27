@@ -16,7 +16,7 @@ No Error
 [user@sahara ~]$ cd lecture1
 [user@sahara ~/lecture1]$
 ```
-initial directory is /home
+initial directory is `/home`
 
 No output, since I'm just changing working directory, and this command changes working directory to `/lecture1`
 
