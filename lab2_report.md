@@ -70,7 +70,7 @@ Here I used `https://0-0-0-0-4000-jc15uvgnbrni1q1acg5qnmo3o0.us.edusercontent.co
 
 ## Part 2
 
-The absolute path to the private key for your SSH key for logging into ieng6 (on your computer, an EdStem workspace, or on the home directory of the lab computer):
+The absolute path to the private key for your SSH key for logging into `ieng6`:
 ```
 C:\Users\gl121>dir C:\Users\gl121\.ssh\id_rsa
  Volume in drive C has no label.
