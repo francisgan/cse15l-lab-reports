@@ -132,3 +132,7 @@ To see all available software packages, type "prep -l" at the command prompt,
 or "prep -h" for more options.
 [lgan@ieng6-201]:~:50$
 ```
+
+## Part 3
+
+I learn how to connect remote server and run java code on it. I observer how multiple people access to the same remote server and how java code deal with it. I also learn how to use keys to access remote server faster.
