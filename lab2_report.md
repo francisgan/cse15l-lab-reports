@@ -58,13 +58,13 @@ I can use `https://0-0-0-0-4000-jc15uvgnbrni1q1acg5qnmo3o0.us.edusercontent.com/
 
 Screenshot one:
 
-![plot](./report2/p1.png)
+![plot](https://github.com/francisgan/cse15l-lab-reports/blob/main/report2/p1.png?raw=true)
 
 Here I used `https://0-0-0-0-4000-jc15uvgnbrni1q1acg5qnmo3o0.us.edusercontent.com/add-message?s=Hello&user=jpolitz`. And then `handleRequest` is being called. The argument is an URI. After parse the URI, there are two parameters user and message. Before the parameter `chatHistory` was empty, now `user` and `message` are stored in `chatHistory`. The Server then returns everything in `chatHistory`.
 
 Screenshot Two:
 
-![plot](./report2/p2.png)
+![plot]([./report2/p2.png](https://github.com/francisgan/cse15l-lab-reports/blob/main/report2/p2.png?raw=true))
 
 Here I used `https://0-0-0-0-4000-jc15uvgnbrni1q1acg5qnmo3o0.us.edusercontent.com//add-message?s=How are you&user=yash`. And then `handleRequest` is being called. The argument is an URI. After parse the URI, there are two parameters user and message. Before the parameter `chatHistory` stores on meessage with user, now a new `user` and `message` pair has been stored in `chatHistory`. The Server then returns everything in `chatHistory`, which are two messages from two users.
 
