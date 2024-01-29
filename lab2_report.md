@@ -1,3 +1,73 @@
+## Part 1
+
+Here is my code in `ChatServer.java`:
+```
+import java.io.IOException;
+import java.net.URI;
+class ChatHandler implements URLHandler {
+    // The state of the server: a StringBuilder to accumulate chat messages
+    StringBuilder chatHistory = new StringBuilder();
+
+    public String handleRequest(URI url) {
+        if (url.getPath().equals("/")) {
+            return chatHistory.length() == 0 ? "No messages yet." : chatHistory.toString();
+        } else if (url.getPath().contains("/add-message")) {
+            String[] parameters = url.getQuery().split("&");
+            String user = null;
+            String message = null;
+            for (String param : parameters) {
+                String[] keyValue = param.split("=");
+                if (keyValue[0].equals("user")) {
+                    user = keyValue[1];
+                } else if (keyValue[0].equals("s")) {
+                    message = keyValue[1];
+                }
+            }
+
+            if (user != null && message != null) {
+                chatHistory.append(user).append(": ").append(message).append("\n");
+                return chatHistory.toString(); // Return the updated chat history
+            } else {
+                return "Invalid request. User and message parameters are required.";
+            }
+        } else {
+            return "404 Not Found!";
+        }
+    }
+}
+class ChatServer {
+    public static void main(String[] args) throws IOException {
+        if (args.length == 0) {
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new ChatHandler());
+    }
+}
+```
+I'm also using `Server.java`, which is provided in previous labs. After I run following code in EdStem command
+```
+[user@sahara ~/wavelet]$ javac Server.java ChatServer.java
+[user@sahara ~/wavelet]$ java ChatServer 4000
+Server Started!
+```
+I can use `https://0-0-0-0-4000-jc15uvgnbrni1q1acg5qnmo3o0.us.edusercontent.com/` to access my ChatServer
+
+Screenshot one:
+
+![plot](./directory_1/directory_2/.../directory_n/plot.png)
+
+Here I used `https://0-0-0-0-4000-jc15uvgnbrni1q1acg5qnmo3o0.us.edusercontent.com/add-message?s=Hello&user=jpolitz`. And then `handleRequest` is being called. The argument is an URI. After parse the URI, there are two parameters user and message. Before the parameter `chatHistory` was empty, now `user` and `message` are stored in `chatHistory`. The Server then returns everything in `chatHistory`.
+
+Screenshot Two:
+
+![plot](./directory_1/directory_2/.../directory_n/plot.png)
+
+Here I used `https://0-0-0-0-4000-jc15uvgnbrni1q1acg5qnmo3o0.us.edusercontent.com//add-message?s=How are you&user=yash`. And then `handleRequest` is being called. The argument is an URI. After parse the URI, there are two parameters user and message. Before the parameter `chatHistory` stores on meessage with user, now a new `user` and `message` pair has been stored in `chatHistory`. The Server then returns everything in `chatHistory`, which are two messages from two users.
+
 ## Part 2
 
 The absolute path to the private key for your SSH key for logging into ieng6 (on your computer, an EdStem workspace, or on the home directory of the lab computer):
