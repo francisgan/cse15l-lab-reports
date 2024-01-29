@@ -64,7 +64,7 @@ Here I used `https://0-0-0-0-4000-jc15uvgnbrni1q1acg5qnmo3o0.us.edusercontent.co
 
 Screenshot Two:
 
-![plot](./directory_1/directory_2/.../directory_n/plot.png)
+![plot](./report2/p2.png)
 
 Here I used `https://0-0-0-0-4000-jc15uvgnbrni1q1acg5qnmo3o0.us.edusercontent.com//add-message?s=How are you&user=yash`. And then `handleRequest` is being called. The argument is an URI. After parse the URI, there are two parameters user and message. Before the parameter `chatHistory` stores on meessage with user, now a new `user` and `message` pair has been stored in `chatHistory`. The Server then returns everything in `chatHistory`, which are two messages from two users.
 
