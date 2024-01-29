@@ -58,7 +58,7 @@ I can use `https://0-0-0-0-4000-jc15uvgnbrni1q1acg5qnmo3o0.us.edusercontent.com/
 
 Screenshot one:
 
-![plot](./directory_1/directory_2/.../directory_n/plot.png)
+![plot](./report2/p1.png)
 
 Here I used `https://0-0-0-0-4000-jc15uvgnbrni1q1acg5qnmo3o0.us.edusercontent.com/add-message?s=Hello&user=jpolitz`. And then `handleRequest` is being called. The argument is an URI. After parse the URI, there are two parameters user and message. Before the parameter `chatHistory` was empty, now `user` and `message` are stored in `chatHistory`. The Server then returns everything in `chatHistory`.
 
