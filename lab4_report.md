@@ -5,7 +5,7 @@
 ```
 ssh lgan@ieng6.ucsd.edu
 ```
-![plot](https://github.com/francisgan/cse15l-lab-reports/blob/main/report3/p1.png?raw=true)
+![plot](https://github.com/francisgan/cse15l-lab-reports/blob/main/report4/image1.png?raw=true)
 ### Step 5
 ```
 git clone git@github.com:francisgan/cse15_lab7.git
