@@ -25,8 +25,8 @@ vim ListExamples.java
 In vim:
 ```
 / i n d e x <space> + = <space>1 <enter> n n L L L L L x i 2 <esc> : w q <enter>
-![plot](https://github.com/francisgan/cse15l-lab-reports/blob/main/report4/image5.png?raw=true)
 ```
+![plot](https://github.com/francisgan/cse15l-lab-reports/blob/main/report4/image5.png?raw=true)
 ### Step 8
 ```
 bash test.sh
