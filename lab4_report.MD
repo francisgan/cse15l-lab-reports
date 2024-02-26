@@ -1,1 +1,39 @@
 
+# CSE15L Lab Report 4
+
+### Step 4
+```
+ssh lgan@ieng6.ucsd.edu
+```
+
+### Step 5
+```
+git clone git@github.com:francisgan/cse15_lab7.git
+```
+
+### Step 6
+```
+bash test.sh
+```
+
+### Step 7
+Open java file with vim:
+```
+vim ListExamples.java
+```
+
+In vim:
+```
+/ i n d e x <space> + = <space>1 <enter> n n L L L L L x i 2 <esc> : w q <enter>
+```
+### Step 8
+```
+bash test.sh
+```
+
+### Step 9
+```
+git add .
+git commit -m “fix bug”
+git push
+```
