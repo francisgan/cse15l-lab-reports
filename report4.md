@@ -21,7 +21,7 @@ Open java file with vim:
 vim ListExamples.java
 ```
 
-In vim:
+In vim, press keys:
 ```
 / i n d e x <space> + = <space>1 <enter> n n L L L L L x i 2 <esc> : w q <enter>
 ```
