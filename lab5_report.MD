@@ -2,6 +2,8 @@
 
 ## file & directory structure:
 
+![plot](https://github.com/francisgan/cse15l-lab-reports/blob/main/report5.png?raw=true)
+
 `GreetNames.java` Content:
 ```
 public class GreetNames {
