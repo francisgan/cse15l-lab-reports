@@ -33,7 +33,7 @@ javac GreetNames.java
 java GreetNames names.txt 
 ```
 
-## Below it the Debugging Senario
+## Debugging Senario:
 
 Student: Hi everyone,
 
