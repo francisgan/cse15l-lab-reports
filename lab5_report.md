@@ -50,7 +50,7 @@ Hello, B!
 Hello, C!
 ```
 
-TA: Could take a screen shot of your java code and `cat` txt file?
+TA: Could you take a screen shot of your java code and use `cat` command to print content in txt file?
 
 Student:
 Here is my java code:
